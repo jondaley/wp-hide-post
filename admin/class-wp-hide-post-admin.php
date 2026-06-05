@@ -186,8 +186,8 @@ if (!class_exists('wp_hide_post_Admin'))
 			$return_url = admin_url('plugins.php');
 
 			$html = <<<HTML
-${err1_sorry}<br />${err2_cleanup}<br /><a href="${$return_url}">${err3_return}</a>
-<script language="javascript">window.alert("${msgbox}");</script>
+{$err1_sorry}<br />{$err2_cleanup}<br /><a href="{$$return_url}">{$err3_return}</a>
+<script language="javascript">window.alert("{$msgbox}");</script>
 HTML;
 			// show the error page with the message...
 			wp_die($html, 'WP low Profiler Activation Not Allowed', array('response' => '200'));

@@ -40,9 +40,9 @@ if (!defined('WPHP_VER'))
 	define('WPHP_PLUGIN_FILE', ltrim(str_replace(str_Replace("/", DIRECTORY_SEPARATOR, WP_PLUGIN_DIR), "", __FILE__), DIRECTORY_SEPARATOR));
 	define('WPHP_PLUGIN_URL', plugin_dir_url(WPHP_PLUGIN_FILE));
 
-	define('WPHP_TABLE_NAME', "${table_prefix}postmeta");
+	define('WPHP_TABLE_NAME', "{$table_prefix}postmeta");
 
-	define('WP_POSTS_TABLE_NAME', "${table_prefix}posts");
+	define('WP_POSTS_TABLE_NAME', "{$table_prefix}posts");
 
 	define('WPHP_DEBUG', defined('WP_DEBUG') && WP_DEBUG ? 1 : 0);
 

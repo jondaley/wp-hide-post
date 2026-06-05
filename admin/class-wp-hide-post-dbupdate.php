@@ -114,7 +114,7 @@ if (!class_exists('wp_hide_post_DB_Update'))
                 return;
             }
 
-            $legacy_table_name   = "${table_prefix}lowprofiler_posts";
+            $legacy_table_name   = "{$table_prefix}lowprofiler_posts";
             $legacy_table_exists = $wpdb->get_var("SELECT COUNT(*) AS count FROM information_schema.tables WHERE table_schema = '$dbname' AND table_name = '$legacy_table_name';");
             if ($legacy_table_exists)
             {
