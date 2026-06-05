@@ -298,7 +298,7 @@ if (!class_exists('wphp_settings'))
 			$this->settings[$this->core_sections['license']['id']] = $this->license_fields;
 			// $this->settings[$this->core_sections['info']['id']]    = $this->info_fields;
 
-			$this->settings[$this->asignment_section['id']] = $this->asignment_fields;
+			// $this->settings[$this->asignment_section['id']] = $this->asignment_fields;
 
 			return $this->settings;
 		}
